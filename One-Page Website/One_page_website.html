@@ -2,31 +2,39 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Lone Elk Lodge</title>
+    <link rel="stylesheet" href="./CSS/one_page_website.css">
 </head>
 <body>
     <!--NAV-->
-    <div>
-        <img src="./images/Header/Lone Elk lodge logo.png" />
-        <div>
-            <a href="#home" id="link">Home</a> &nbsp; | &nbsp;
-            <a href="#units">View Our Rentals</a> &nbsp; | &nbsp;
-            <a href="#rent">Book your stay</a> &nbsp;| &nbsp;
-            <a href="#glacier">Visit Glacier Park</a> &nbsp;
+    <div class="wrap">
+        <div class="menu-container">
+       
+          <div>
+            <ul class="menu">
+                <li><img src="./images/Header/Lone Elk lodge logo.png"></li>
+                <li><a href="#home" id="link">Home</a></li>
+                <li><a href="#units">View Our Rentals</a></li> 
+                <li><a href="#rent">Book your stay</a></li> 
+                <li><a href="#glacier">Visit Glacier Park</a></li> 
+            </ul>
+          </div>
         </div>
     </div>
     <!--End Nav-->
     <!--Home-->
     <div id="home">
-        <div>
-            <span> Lone Elk Lodge</span>
+        <div class="container">
+            <div>
+                <span class="head-main"> Lone Elk Lodge</span>
+            </div>
         </div>
-        <img src="./images/Loneelklodge.jpg" />
     </div>
     <!--End home-->
     <!--Units-->
     <section>
     <div id="units">
+        <div>
         <h1> View Our Rentals</h1>
         <div>
             <!--Photo Container 1-->
@@ -129,6 +137,7 @@
             </div>
             <!--End Photo Container 9-->
         </div>
+        </div>
     </div>
 </section>
     <!--End Gallery-->
@@ -149,34 +158,41 @@
         </div>
     </section>
     <!--RSVP-->
-    <section>
-        <div id="rent">
-            <div>
-                <h1> Reservsations</h1>
-                <div>
+    <section id="rent">
+        <div class = "container">
+            <div class="heading-padding">
+                <h1 class = "heading-padding"> Reservsations</h1>
+                <div class="reservation">
                     <h2>
                         <span>Your adventure is waiting in the Rocky Mountains.</span>
-                        <br />Reserve your own luxry lodge today!
+                        <br />Reserve your own luxury lodge today!
                     </h2>
-                    <p>
-                        Please provide us with your basic contact information
-                    </p>
+                    
                     <div>
                         <form action="" method="post">
                             <ul>
+                                <p>
+                                    Please provide us with your basic contact information
+                                </p>
                                 <li><input class="rsvp" type="text" value="Fist Name"></li>
                                 <li><input class="rsvp" type="text" value="Last Name"></li>
                                 <li><input class="rsvp" type="text" value="Email Address"></li>
                                 <li><input class="rsvp" type="text" value="Phone Number"></li>
-                                <li><p>Checkin date</p></li>
+                                <li> &nbsp;</li>
+                                    <div class="check-in">
+                                <li>Checkin date</li>
                                 <li><input class="rsvp" type="date" value="Checkin date"></li>
-                                <li><p>Checkout date</p></li>
+                                        </div>
+                                        <li> &nbsp;</li>
+                                        <div class="checkout">
+                                <li>Checkout date</li>
                                 <li><input class="rsvp" type="date" value="Checkout date"></li>
+                                    </div>
                             </ul>
                             <div class="form-spacer">
                           
                             </div>
-                            <div>
+                            <div class="submit">
                                 <input type="submit" value="Submit">
                             </div>
                         </form>
