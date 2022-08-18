@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head-->
+    <head>
+        <meta charset="utf-8">
+        
+        <title> Mara Haggar's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/Portfolio.css">
+    </head>
+    <body class="background">
+        <!--Navbar-->
+        <div class="navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Space Break-->
+        <br>
+        <br>
+        <!--Background Video-->
+        <div id="Home">
+            <div class="video-overlay">
+                <video autoplay muted loop id="Typing_Video">
+                    <source src="./Video/180825_01_laptop.mp4" type="video/mp4" hight="240" width="600">
+                    Your bowser does not support HTML5 video.            
+                </video>
+             </div>
+        </div>
+        <!--Video text overlay-->
+        <div class="Video_text">
+            <h1 class="white-text">Mara's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>A creative life is an amplified life. It's a bigger life, 
+                        <br> a happier life, 
+                        <br> an expanded life, and a hell of a lot more interesting life 
+                     </q>
+                     <br>- Elizabeth Gilbert
+                     <br>
+                     <br>My name is Mara Haggar. Welcome to my portfolio website. Let me tell you about myself. 
+                     <br>
+                     <br> Thank you for visiting!  
+                </p>
+             </strong>
+        </div>
+
+        <!--About Section-->
+        <div class="row" id="About">
+            <!--Left Colomn-->
+            <div class="column_2">
+                <img src="./Images/Portrait/portraite.jpeg" alt="profile photo">
+            </div>
+            <!-- Right Colomn-->
+            <div class="column_1">
+                <h1>About</h1>
+                    <p>
+                        I am an ex-language teacher and graphic designer  currently taking classes at 
+                        <a href="http://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software 
+                        developer boot camp. After teaching children from elementary to high school age, I was inspired to learn how to 
+                        create programs and games for teachers to utilize inside and outside the classroom for children with 
+                        learning difficulties.
+                        <br>
+                        <br> I am a junior developer that would love the opertunity to work with you and your team on your next creative project. <a href="Contanct">Contact</a> me for more information below.   
+                    </p>
+            </div>
+        </div>
+        <!-- GitHub Section-->
+        <div class="row" id="GitHub">
+            <!--Left Colomn-->
+            <div class="column_1">
+                <h1> GitHub</h1>
+                <p>
+                    You can view my coding projets on my GitHub profile here:
+                    <br>
+                    
+                    <button class="center"> <a href="https://github.com/Haskasimo" target="_blank">Mara's GitHub</a></button>
+                
+                </p>
+            </div>
+            <!-- Right Colomn-->
+            <div class="column_2">
+                <a href="https://github.com/Haskasimo" target="_blank"><img src="./Images/github/Githublogo4.png" alt="github logo"></a>
+            </div>
+        </div>
+
+        <!-- Contact Section-->
+        <div class="row" id="contact">
+            <!--Contact image-->
+            <div class="column_2 column_tall">
+                <img src="./Images/icons/353-3531801_email-us-email-icon.png" alt="mail icon">
+            </div>
+            <!--Contact Form Right Column-->
+            <div class="column_1 column_tall">
+                <h1>Contact</h1>
+                <!-- contact form to third party service-->
+                <form action="https://formspree.io/f/xyyvyjkr" method="post">
+                    <label>Name:</label>
+                        <input type="text" placeholder="please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit"  value="SUBMIT">
+                </form>
+            </div>
+        </div>
+        <!-- Footer Section-->
+        
+        <footer>
+            <p>
+                <p class="center"> &copy; Mara Haggar. , <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
