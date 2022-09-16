@@ -40,6 +40,37 @@
                   <p class="lead text-light">Sit back, relax, and enjoy the show...</p>
                 </div>
               </div>
+              <!-- Main titles slideshow-->
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <!-- First slide-->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./Img/beauty-and-the-beast wide.jpg" alt="Beauty and the beast"> 
+                  </div>
+                  <!-- second slide-->
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./Img/ghost-in-the-shell_wide.jpg" alt="ghost">
+                  </div>
+                  <!-- third slide-->
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./Img/wallpaperflare.com_wallpaper.jpg" alt="Kong">
+                  </div>
+                </div>
+                <!--slideshow controls-->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
                   <!-- This is a three collomn section-->
               <section id="about">
               <div class="container">
@@ -136,19 +167,78 @@
                 </div>
               </div>
             </section>
+             <!-- Jumbotron for movie deals-->
+             <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+              <div class="container">
+                <h1 class="display-4 hidden-sm-down" style="color:#fff; font-family:roboto; font-weight: 900; text-transform: uppercase;">Movie Deals</h1>
+                <p class="lead">check out our monthly deals...</p>
+                <!--movie deals-->
+                <!--This button will open up a model with a form for the user to fill out-->
+                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#regester">See our monthly movie deals</button>
+                <!--end of movie deals-->
+              </div>
+            </div>
+            <!--end of movie deal section-->
               
                <!-- email submition bar-->
                <section id="rewards">
                   <div class="text-center">
                         <form class="email">
-                            <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
+                            <h1 class="text-primary my-5">Stay current on movies!</h1>
                             <div class="form-group">
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <!-- this button has an added popover, meaning a popup box will apear when clicked-->
+                            <button type="button" class="btn btn-info popover-dismiss " data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to recive great movie rewards!">
+                              Sign up!
+                            </button>
                         </form>
                   </div>
                </section> 
+               <!-- form Model-->
+
+                <!-- Modal popup box-->
+                <div class="modal fade" id="regester" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Regester to recive movie deals.</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+
+                        <!-- information form-->
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="FirstN">First Name</label>
+                              <input type="text" class="form-control" id="FirstN" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="LastN">Last Name</label>
+                              <input type="text" class="form-control" id="LastN" placeholder="Last Name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control" id="Email" placeholder="Email">
+                          </div>
+                          <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="ipassword" placeholder="Password">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-info">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of Model popup box-->
                   <!-- bottom footer Nav bar-->
               <div class="container my-5">
                 <ul class="nav nav-inline">
@@ -174,5 +264,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!--This create a popover when a button is clicked in the email section-->
+    <script>$('.popover-dismiss').popover({
+      trigger: 'focus'
+    })
+    //this makes the top slideshow change pictures every 4 seconds.
+    $('.carousel').carousel({
+  interval: 4000
+  })
+    </script>
+  
   </body>
 </html>
